@@ -50,9 +50,8 @@
 		}
 
 	  ?>
-	
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">	
-			<video src="https://local.dreamliketest.dk/wp-content/uploads/2021/05/Video-Hero-1.m4v" muted></video>
+			<video src="https://local.dreamlikestudios.dk/wp-content/uploads/2021/05/Video%20Hero-1.m4v" muted></video>
 			<img src="./wp-content/themes/layback-child/partials/blocks/video-parallax/cave.png" alt="cave">
 	    </div>
     
