@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Default Plugin Template\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-18 12:05+0000\n"
+"PO-Revision-Date: 2019-09-18 12:06+0000\n"
+"Last-Translator: administrator <info@callanalytics.dk>\n"
+"Language-Team: Dansk\n"
+"Language: da_DK\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.0; wp-5.2.3"
+
+#: posttypes/custom-post_type.php:20 posttypes/custom-post_type.php:21
+msgid "custom name"
+msgstr ""
+
+#: posttypes/custom-post_type.php:22
+msgid "This is a default post_type description"
+msgstr "Det her er en standard post_type beskrivelse"
+
+#: posttypes/custom-post_type.php:30
+msgid "category"
+msgstr "kategori"
+
+#: posttypes/custom-post_type.php:31
+msgid "categories"
+msgstr "kategorier"
+
+#: posttypes/custom-post_type.php:37
+msgid "tag"
+msgstr "tag"
+
+#: posttypes/custom-post_type.php:38
+msgid "tags"
+msgstr "tags"
+
+#: posttypes/custom-post_type.php:48 posttypes/custom-post_type.php:104
+#: posttypes/custom-post_type.php:134
+msgid "All"
+msgstr "Alle"
+
+#: posttypes/custom-post_type.php:49 posttypes/custom-post_type.php:50
+#: posttypes/custom-post_type.php:109 posttypes/custom-post_type.php:139
+msgid "Add new"
+msgstr "Tilføj ny"
+
+#: posttypes/custom-post_type.php:51 posttypes/custom-post_type.php:52
+#: posttypes/custom-post_type.php:107 posttypes/custom-post_type.php:137
+msgid "Edit"
+msgstr "Rediger"
+
+#: posttypes/custom-post_type.php:53
+msgid "New"
+msgstr "Ny"
+
+#: posttypes/custom-post_type.php:54
+msgid "View"
+msgstr "VIs"
+
+#: posttypes/custom-post_type.php:55 posttypes/custom-post_type.php:103
+#: posttypes/custom-post_type.php:133
+msgid "Search for"
+msgstr "Søg efter"
+
+#: posttypes/custom-post_type.php:56
+msgid "Nothing found in the database"
+msgstr "Intet fundet i databasen"
+
+#: posttypes/custom-post_type.php:57
+msgid "The trash is empty"
+msgstr "Papirkurven er tom"
+
+#: posttypes/custom-post_type.php:105 posttypes/custom-post_type.php:135
+msgid "Parent"
+msgstr "Forældre"
+
+#: posttypes/custom-post_type.php:106 posttypes/custom-post_type.php:136
+msgid "Parent item:"
+msgstr "Forældre indlæg:"
+
+#: posttypes/custom-post_type.php:108 posttypes/custom-post_type.php:138
+msgid "Update"
+msgstr "Opdater"
+
+#: posttypes/custom-post_type.php:110 posttypes/custom-post_type.php:140
+#, php-format
+msgid "New %s-name"
+msgstr "Nyt %s-navn"
+
+#. Name of the plugin
+msgid "Default Plugin Template"
+msgstr "Standard plugin skabelon"
+
+#. Description of the plugin
+msgid "This is a starter plugin developed by Layback"
+msgstr "Det her er en skabelon til at lave et plugin"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://laybackcph.dk"
+msgstr "https://laybackcph.dk"
+
+#. Author of the plugin
+msgid "Layback"
+msgstr "Layback"
