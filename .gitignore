@@ -1,18 +1,12 @@
 # wp-admin/*
 # wp-includes/*
 # wp-content/languages/*
-wp-content/plugins/loco-translate/
-wp-content/plugins/query-monitor/
 wp-content/backup/*
 wp-content/cache/*
 wp-content/upgrade/*
-wp-content/uploads/wc-logs/*
-# wp-content/uploads/*
-wp-content/db.php
+wp-content/uploads/*
 */scss_cache/*
-*/wc-logs/*
 sitemap.*
-
 
 # localfiles for wordpress
 wp-config.php
@@ -34,18 +28,12 @@ readme.html
 # wp-trackback.php
 # xmlrpc.php
 
-# certificates
-*.crt
-*.key
 
 # Hidden system files
 *.DS_Store
 *.htaccess
 *[Tt]humbs.db
 *.Trashes
-*.cert
-*.key
-prepros-6.config
  
 # Include these files in previously blocked directories
 !wp-content/uploads/.htaccess
