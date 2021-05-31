@@ -1,0 +1,42 @@
+.wp-block-media-text{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+	max-width: $fullsize;
+
+	@media only screen and (max-width: $md) {
+		flex-wrap: wrap;
+	}
+
+	&.alignwide{
+		max-width: $xl;
+	}
+
+	&.alignfull{
+		max-width: 100%;
+	}
+
+	&.has-media-on-the-right{
+		figure.wp-block-media-text__media{
+			order: 2;
+		}
+	}
+	
+	figure.wp-block-media-text__media,
+	.wp-block-media-text__content{
+		flex-grow: 0;
+		flex-basis: 50%;
+		width: 50%;
+		flex-shrink: 1;
+
+		@media only screen and (max-width: $md) {
+			flex-basis: 100%;
+		}
+
+	}
+
+	.wp-block-media-text__content{
+		padding: 0 15px;
+	}
+}

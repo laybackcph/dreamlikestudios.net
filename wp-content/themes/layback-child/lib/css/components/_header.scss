@@ -1,0 +1,201 @@
+/* Header
+------------------------------------------------------*/
+
+.site-header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	transition: .3s ease;
+
+	// .admin-bar & {
+	// 	top: 32px;
+	// }
+
+	.scroll_line {
+		background-color: $primary;
+		height: 3px;
+		width: 0%;
+		opacity: 0;
+		transition: .5s ease;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+
+	&.scrolled {
+		background-color: $bgc;
+
+		.inner {
+			border-color: transparent;
+		}
+
+		.scroll_line {
+			opacity: 1;
+		}
+	}
+
+	.inner {
+		max-width: $xl;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 15px;
+		border-bottom: 1px solid $border;
+		max-height: 100px;
+		overflow: hidden;
+	}
+
+	/* Header site logo
+	------------------------------------------------------*/
+
+	.site-logo{
+		svg,
+		img {
+			display: block;
+			margin: 10px auto;
+			max-width: 300px;
+			width: 100%;
+			padding: 0 15px;
+		}
+	}
+
+	/* Navigation
+	------------------------------------------------------*/
+
+	.site-navigation {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+
+			@media (max-width: $md) {
+				display: none;
+			}
+
+			li {
+				list-style: none;
+				position: relative;
+
+				&.current-menu-item {
+					> a {
+						font-weight: 700;
+						color: #fff;
+					}
+				}
+
+				a {
+					display: block;
+					padding: 0 15px;
+					color: lighten($blue, 10%);
+					transition: .3s ease;
+
+					&:hover {
+						color: #fff;
+					}
+				}
+
+				/* 2. level sub menu
+				------------------------------------------------------*/
+
+				&:hover{
+					.sub-menu{
+						pointer-events: all;
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+
+				.sub-menu{
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+					pointer-events: none;
+					visibility: hidden;
+					opacity: 0;
+					display: block;
+					// transition: 200ms;
+					background-color: $darkgray;
+
+					li{
+						position: relative;
+
+						&:hover,
+						&.current-menu-item {
+							background-color: lighten($darkgray, 5%);
+						}
+
+						a{
+							white-space: nowrap;
+							padding: 5px 30px;
+							color: #fff;
+						}
+
+						/* 3. level sub menu (hidden by default)
+						------------------------------------------------------*/
+
+						// &:hover{
+							
+						// 	.sub-menu{
+						// 		pointer-events: all;
+						// 		visibility: visible;
+						// 		opacity: 1;
+						// 	}
+
+						// }
+
+						.sub-menu{
+							display: none;
+							// pointer-events: none;
+							// visibility: hidden;
+							// opacity: 0;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.btn {
+			position: relative;
+			overflow: hidden;
+			height: 32px;
+			margin-left: 15px;
+			z-index: 1;
+			transition: color 0.4s ease-in-out;
+
+			&::before {
+			  content: '';
+			  z-index: -1;
+			  position: absolute;
+			  top: 100%;
+			  right: 100%;
+			  width: 1em;
+			  height: 1em;
+			  border-radius: 50%;
+			  background-color: $secondary;
+			  transform-origin: center;
+			  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+			  transition: transform 0.45s ease-in-out;
+			}
+
+			&:hover {
+			  	&::before {
+				  	transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15);
+				}
+			}
+		}
+
+	}
+
+}

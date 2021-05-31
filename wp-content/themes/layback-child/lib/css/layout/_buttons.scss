@@ -1,0 +1,58 @@
+/* Button layout
+------------------------------------------------------*/
+
+.btn,
+.btn:link,
+.wp-block-button__link,
+.wp-block-button .wp-block-button__link:link{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;	
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	width: fit-content;
+	cursor: pointer;
+
+	font-size: $fontsize;
+	background-color: $primary;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	height: 50px;
+	padding: 0 25px;
+	transition: .3s ease;
+
+	font-family: 'Sigmar One';
+
+	@media only screen and (max-width: $sm) {
+		font-size: 14px;
+	}
+
+	&:hover {
+		background-color: lighten($primary, 10%);
+		color: #fff;
+	}
+
+	&[disabled="disabled"],
+	&[disabled]{
+		opacity: 0.5;
+		transition: none;
+		cursor: initial;
+
+		&:hover{
+			background-color: $primary;
+		}
+	}
+
+	&.round{
+		border-radius: 50px;
+	}
+
+	&.wide{
+		width: 100%;
+	}
+
+}

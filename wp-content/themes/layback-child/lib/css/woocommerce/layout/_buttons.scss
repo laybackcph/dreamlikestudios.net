@@ -1,0 +1,6 @@
+a.button,
+button.button,
+input.button,
+#respond input#submit{
+	@extend .btn;
+}

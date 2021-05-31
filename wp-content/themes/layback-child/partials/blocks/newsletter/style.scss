@@ -1,0 +1,75 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-newsletter {
+	margin: 100px auto;
+	padding: 0 15px;
+	background-color: $darkblue;
+
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		max-width: $md;
+		margin: 0 auto;
+
+		@media (max-width: $md) {
+			padding: 50px 0;
+		}
+
+		@media (max-width: $sm) {
+			flex-wrap: wrap;
+		}
+
+		img {
+			max-width: 40%;
+			margin-top: -75px;
+			vertical-align: middle;
+			transition: .3s ease;
+
+			@media (max-width: $md) {
+				margin-bottom: -50px;
+			}
+
+			@media (max-width: $sm) {
+				margin-top: -125px;
+				max-width: 50%;
+			}
+
+			@media (max-width: $xs) {
+				max-width: 75%;
+			}
+		}
+
+		form {
+			position: relative;
+
+			h2 {
+				display: block;
+			}
+
+			input {
+				background-color: transparent;
+				color: #fff;
+				height: 50px;
+			}
+
+			button {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 50px;
+				width: 50px;
+				background-color: $primary;
+				color: #fff;
+				border: none;
+				cursor: pointer;
+				transition: .3s ease;
+
+				&:hover {
+					background-color: lighten($primary, 10%);
+				}
+			}
+		}
+	}
+}

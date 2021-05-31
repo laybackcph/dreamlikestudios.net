@@ -1,0 +1,64 @@
+.block-newsletter {
+  margin: 100px auto;
+  padding: 0 15px;
+  background-color: #171838; }
+  .block-newsletter .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1024px;
+    margin: 0 auto; }
+    @media (max-width: 1024px) {
+      .block-newsletter .inner {
+        padding: 50px 0; } }
+    @media (max-width: 768px) {
+      .block-newsletter .inner {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+    .block-newsletter .inner img {
+      max-width: 40%;
+      margin-top: -75px;
+      vertical-align: middle;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease; }
+      @media (max-width: 1024px) {
+        .block-newsletter .inner img {
+          margin-bottom: -50px; } }
+      @media (max-width: 768px) {
+        .block-newsletter .inner img {
+          margin-top: -125px;
+          max-width: 50%; } }
+      @media (max-width: 576px) {
+        .block-newsletter .inner img {
+          max-width: 75%; } }
+    .block-newsletter .inner form {
+      position: relative; }
+      .block-newsletter .inner form h2 {
+        display: block; }
+      .block-newsletter .inner form input {
+        background-color: transparent;
+        color: #fff;
+        height: 50px; }
+      .block-newsletter .inner form button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        width: 50px;
+        background-color: #FF01B3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease; }
+        .block-newsletter .inner form button:hover {
+          background-color: #ff34c2; }

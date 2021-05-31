@@ -1,0 +1,29 @@
+/* Variables
+------------------------------------------------------*/
+
+@import 'abstract/_variables.scss';
+
+/* Base
+------------------------------------------------------*/
+
+@import 'base/_typography.scss';
+
+/* Layout
+------------------------------------------------------*/
+
+@import 'layout/_buttons.scss';
+
+/* Main column width */
+.wp-block {
+    max-width: $fullsize;
+}
+ 
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: $xl;
+}
+ 
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: 100%;
+}

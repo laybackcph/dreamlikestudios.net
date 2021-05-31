@@ -1,0 +1,36 @@
+.block-video-parallax {
+  overflow: hidden;
+  margin: 50px auto;
+  width: 100%;
+  position: relative; }
+  .block-video-parallax:before, .block-video-parallax:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 6; }
+  .block-video-parallax:before {
+    top: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0D0E22), to(transparent));
+    background-image: -webkit-linear-gradient(top, #0D0E22, transparent);
+    background-image: -o-linear-gradient(top, #0D0E22, transparent);
+    background-image: linear-gradient(to bottom, #0D0E22, transparent);
+    z-index: 6; }
+  .block-video-parallax:after {
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#0D0E22), to(transparent));
+    background-image: -webkit-linear-gradient(bottom, #0D0E22, transparent);
+    background-image: -o-linear-gradient(bottom, #0D0E22, transparent);
+    background-image: linear-gradient(to top, #0D0E22, transparent); }
+  .block-video-parallax video {
+    width: 100%;
+    vertical-align: middle; }
+  .block-video-parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none; }

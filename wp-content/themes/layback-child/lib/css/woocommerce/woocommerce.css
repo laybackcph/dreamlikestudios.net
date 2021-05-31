@@ -1,0 +1,125 @@
+.btn, a.button,
+button.button,
+input.button,
+#respond input#submit,
+.btn:link,
+a.button:link,
+button.button:link,
+input.button:link,
+#respond input#submit:link {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: auto;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: #323232;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  -webkit-transition: 100ms;
+  -o-transition: 100ms;
+  transition: 100ms; }
+  .btn:hover, a.button:hover,
+  button.button:hover,
+  input.button:hover,
+  #respond input#submit:hover,
+  .btn:link:hover,
+  a.button:link:hover,
+  button.button:link:hover,
+  input.button:link:hover,
+  #respond input#submit:link:hover {
+    background-color: #4c4c4c;
+    color: #fff; }
+  .btn[disabled="disabled"], a.button[disabled="disabled"],
+  button.button[disabled="disabled"],
+  input.button[disabled="disabled"],
+  #respond input#submit[disabled="disabled"], .btn[disabled], a.button[disabled],
+  button.button[disabled],
+  input.button[disabled],
+  #respond input#submit[disabled],
+  .btn:link[disabled="disabled"],
+  a.button:link[disabled="disabled"],
+  button.button:link[disabled="disabled"],
+  input.button:link[disabled="disabled"],
+  #respond input#submit:link[disabled="disabled"],
+  .btn:link[disabled],
+  a.button:link[disabled],
+  button.button:link[disabled],
+  input.button:link[disabled],
+  #respond input#submit:link[disabled] {
+    opacity: 0.5;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    cursor: initial; }
+    .btn[disabled="disabled"]:hover, a.button[disabled="disabled"]:hover,
+    button.button[disabled="disabled"]:hover,
+    input.button[disabled="disabled"]:hover,
+    #respond input#submit[disabled="disabled"]:hover, .btn[disabled]:hover, a.button[disabled]:hover,
+    button.button[disabled]:hover,
+    input.button[disabled]:hover,
+    #respond input#submit[disabled]:hover,
+    .btn:link[disabled="disabled"]:hover,
+    a.button:link[disabled="disabled"]:hover,
+    button.button:link[disabled="disabled"]:hover,
+    input.button:link[disabled="disabled"]:hover,
+    #respond input#submit:link[disabled="disabled"]:hover,
+    .btn:link[disabled]:hover,
+    a.button:link[disabled]:hover,
+    button.button:link[disabled]:hover,
+    input.button:link[disabled]:hover,
+    #respond input#submit:link[disabled]:hover {
+      background-color: #323232; }
+  .btn.wide, a.wide.button,
+  button.wide.button,
+  input.wide.button,
+  #respond input.wide#submit,
+  .btn:link.wide,
+  a.button:link.wide,
+  button.button:link.wide,
+  input.button:link.wide,
+  #respond input#submit:link.wide {
+    width: 100%; }
+
+.woocommerce-notices-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 30px auto 0; }
+
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-error {
+  background-color: #ecf0f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-top: 4px solid #bdc3c7; }
+  .woocommerce-info a,
+  .woocommerce-info .button,
+  .woocommerce-message a,
+  .woocommerce-message .button,
+  .woocommerce-error a,
+  .woocommerce-error .button {
+    margin-left: auto;
+    -webkit-box-ordinal-group: 101;
+    -ms-flex-order: 100;
+    order: 100; }
+
+.woocommerce-error {
+  padding-left: 33px; }

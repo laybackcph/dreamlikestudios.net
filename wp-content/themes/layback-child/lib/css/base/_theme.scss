@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	font-family: $body-font;
+	background-color: $bgc;
+	font-weight: 400;
+	font-size: 0.876em;
+	margin: 0;
+	padding: 0;
+	line-height: 1.7;
+	color: #fff;
+	overflow-x: hidden;
+	font-smoothing: grayscale;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: inline;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	clear: right;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	clear: left;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.admin-bar {
+	height: calc(100vh - 32px);
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.wp-caption {
+	max-width: 100%;
+}
+
+iframe {
+	max-width: 100%;
+}

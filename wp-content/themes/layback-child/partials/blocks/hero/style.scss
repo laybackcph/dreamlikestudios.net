@@ -1,0 +1,296 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-hero {
+	margin: 0;
+	position: relative;
+	width: 100vw;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	min-height: 500px;
+	color: #fff;
+	padding: 100px 0;
+
+	@media (max-width: $xs) {
+		min-height: 100vh;
+		height: unset;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(#171C59, .25);
+		pointer-events: none;
+	}
+
+	&:before {
+		content: "";
+		background-image: linear-gradient(to top, $bgc, transparent);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		z-index: 6;
+		pointer-events: none;
+	}
+
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 6;
+	}
+	
+	.slick-list {
+		height: 100%;
+		width: 100%;
+
+		.slick-track {
+			height: 100%;
+
+			.slick-slide {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+				&:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: #000;
+					opacity: .5;
+				}
+			}
+		}
+	}
+
+	.slick-arrow {
+		background-color: transparent;
+		border: none;
+		color: #fff;
+		font-size: 42px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		cursor: pointer;
+		transition: .3s ease;
+
+		&:hover {
+			color: $primary;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&.slick-prev {
+			left: 25px;
+		}
+
+		&.slick-next {
+			right: 25px;
+		}
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: 5px;
+		transform: translateX(-50%);
+		left: 50%;
+		z-index: 1;
+
+		button {
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	video,
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		user-select: none;
+	}
+
+	video {
+		object-position: bottom;
+	}
+
+	.inner {
+		max-width: $fullsize;
+		width: 100%;
+		position: relative;
+		padding: 0 15px;
+		text-align: center;
+		user-select: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		// margin-bottom: 100px;
+
+		> * {
+			z-index: 7;
+			position: relative;
+			pointer-events: none;
+		}
+
+		h2 {
+			font-size: 100px;
+
+			@media (max-width: $xl) {
+				font-size: 78px;
+			}
+
+			@media (max-width: $fullsize) {
+				font-size: 68px;
+			}
+
+			@media (max-width: $md) {
+				font-size: 58px;
+			}
+
+			@media (max-width: $sm) {
+				font-size: 48px;
+			}
+
+			@media (max-width: $xs) {
+				font-size: 38px;
+			}
+		}
+
+		p {
+			text-transform: uppercase;
+			letter-spacing: 10px;
+			font-size: 34px;
+			margin: 0;
+
+			@media (max-width: $fullsize) {
+				font-size: 26px;
+			}
+
+			@media (max-width: $md) {
+				font-size: 24px;
+				letter-spacing: 8px;
+			}
+
+			@media (max-width: $sm) {
+				font-size: 22px;
+				letter-spacing: 6px;
+			}
+
+			@media (max-width: $xs) {
+				font-size: 18px;
+			}
+		}
+
+		.btn {
+			margin-top: 60px;
+			padding: 0 75px;
+			background-color: $secondary;
+			pointer-events: auto;
+
+			&:hover {
+				background-color: lighten($secondary, 10%);
+			}
+
+			@media (max-width: $md) {
+				margin-top: 50px;
+		  	}
+
+			@media (max-width: $sm) {
+				margin-top: 40px;
+		  	}
+
+			@media (max-width: $xs) {
+				margin-top: 30px;
+		  	}
+		}
+
+		.scroll-down {
+			margin-top: 50px;
+			pointer-events: auto;
+			transition: .3s ease;
+
+			&:hover {
+				transform: scale(1.3);
+			}
+
+		  	@media (max-width: $md) {
+				margin-top: 40px;
+		  	}
+
+			@media (max-width: $sm) {
+				margin-top: 30px;
+		  	}
+
+			@media (max-width: $xs) {
+				margin-top: 15px;
+		  	}
+
+		  	i {
+		  		font-size: 26px;
+
+		  		&:before {
+		  			color: $secondary;
+		  		}
+
+		  		&:after {
+		  			opacity: 1;
+		  		}
+		  	}
+		}
+	}
+
+	.stripes {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: $xl;
+		height: 100%;
+		z-index: 5;
+		pointer-events: none;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-evenly;
+	}
+
+	.stripe {
+		display: block;
+		background-color: $primary;
+		width: 150px;
+		height: 0%;
+		border-radius: 75px 75px 0 0;
+		opacity: .2;
+		transition: 1s ease-in-out;
+
+		&:nth-child(even) {
+			background-color: $secondary;
+		}
+	}
+}

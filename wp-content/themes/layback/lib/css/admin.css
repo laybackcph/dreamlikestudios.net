@@ -1,0 +1,53 @@
+body.formidable_page_formidable-pro-upgrade,
+body.post-type-frm_display.edit-php,
+body.frm-white-body {
+  background-color: #f1f1f1; }
+
+.frm_wrap #post-body-content {
+  background: transparent !important; }
+
+.frm-white-body .postbox {
+  background: transparent !important; }
+
+#postbox-container-1 .frm_field_list #frm-insert-fields {
+  background-color: #fff; }
+
+#postbox-container-1 #taxonomy-linkcategory #frm-html-tags {
+  background-color: #fff; }
+
+.frm_wrap #frm_adv_info .categorydiv div.tabs-panel,
+.frm_field_list .categorydiv div.tabs-panel {
+  background-color: #fff; }
+
+.frm_orange_button,
+.frm_reverse_button,
+.post-type-frm_display .wrap .add-new-h2,
+.frm_wrap .add-new-h2 {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px 2px;
+  background: #0085ba;
+  border-color: #0073aa #006799 #006799;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 0 #006799;
+  box-shadow: 0 1px 0 #006799;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  cursor: pointer; }
+  .frm_orange_button:hover, .frm_orange_button:active, .frm_orange_button:focus,
+  .frm_reverse_button:hover,
+  .frm_reverse_button:active,
+  .frm_reverse_button:focus,
+  .post-type-frm_display .wrap .add-new-h2:hover,
+  .post-type-frm_display .wrap .add-new-h2:active,
+  .post-type-frm_display .wrap .add-new-h2:focus,
+  .frm_wrap .add-new-h2:hover,
+  .frm_wrap .add-new-h2:active,
+  .frm_wrap .add-new-h2:focus {
+    background-color: #008ec2;
+    border-color: #006799;
+    color: #fff; }

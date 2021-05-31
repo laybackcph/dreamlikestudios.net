@@ -1,0 +1,56 @@
+/* Variables
+------------------------------------------------------*/
+
+@import 'abstract/_variables.scss';
+
+/* Grid
+------------------------------------------------------*/
+
+@import 'abstract/_grid.scss';
+
+/* Base
+------------------------------------------------------*/
+
+@import 'base/_theme.scss';
+@import 'base/_typography.scss';
+
+/* Layout
+------------------------------------------------------*/
+
+@import 'layout/_buttons.scss';
+@import 'layout/_forms.scss';
+@import 'layout/_table.scss';
+@import 'layout/_lists.scss';
+
+/* Components
+------------------------------------------------------*/
+
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+@import 'components/_sidebar.scss';
+
+/* Blocks
+------------------------------------------------------*/
+
+@import 'blocks/_general.scss';
+@import 'blocks/_media-text.scss';
+
+/* Pages
+------------------------------------------------------*/
+
+@import 'pages/_archive.scss';
+@import 'pages/_search.scss';
+@import 'pages/_blog.scss';
+@import 'pages/_page.scss';
+@import 'pages/_single.scss';
+@import 'pages/_frontpage.scss';
+
+/* Vendors
+------------------------------------------------------*/
+
+@import 'vendor/_slick.scss';
+
+/* Responsive (mobile, tablets and other small devices)
+------------------------------------------------------*/
+
+@import 'base/_responsive.scss';

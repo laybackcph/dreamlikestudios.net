@@ -1,0 +1,27 @@
+.woocommerce-notices-wrapper{
+	max-width: $fullsize;
+	width: 100%;
+	margin: 30px auto 0;
+}
+
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-error{
+	background-color: $lightgray;
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	margin-bottom: 30px;
+	border-top: 4px solid $border;
+
+	a,
+	.button{
+		margin-left: auto;
+		order: 100;
+	}
+
+}
+
+.woocommerce-error{
+	padding-left: 33px;
+}

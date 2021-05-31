@@ -1,0 +1,33 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-video-scroll {
+	.intro {
+		height: 100vh;
+
+		video {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		h1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);			
+		}
+	}
+
+	section {
+		height: 100vh;
+
+		h1 {
+			padding-top: 300px;
+		}
+	}
+
+	#hero-section {
+		width: 100vw;
+		height: 100vh;
+	}
+}

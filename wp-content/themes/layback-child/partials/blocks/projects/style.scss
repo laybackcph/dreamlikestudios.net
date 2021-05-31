@@ -1,0 +1,187 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-projects {
+	margin: 50px auto;
+	padding: 0 15px;
+
+	#our-projects {
+		opacity: 0;
+		transform: translateY(100px);
+		transition: all 0.6s ease-out;
+		padding-bottom: 55px;
+		margin-top: 15px;
+			
+		&.visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.slick-list {
+			padding: 5% 0;
+
+			@media (max-width: $xs) {				
+				padding: 15px 0;
+			}
+		}
+
+		.slick-arrow {
+			position: absolute;
+			bottom: 0;
+			background-color: transparent;
+			border: 1px solid #fff;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			transition: .3s ease;
+
+			&:hover {
+				color: $primary;
+				border-color: $primary;
+			}
+
+			&.slick-prev {
+				left: 0;
+			}
+
+			&.slick-next {
+				left: 45px;
+			}
+		}
+
+		.project {
+			transition: all 0.6s ease-out;
+			height: 350px;
+		    background-size: cover;
+		    background-position: center;
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+
+			background-image: url('bg3.jpg');
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($bgc, .73);
+				transition: .3s ease;
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: -1px;
+				height: 80%;
+				width: 100%;
+				background-image: linear-gradient(to top, $bgc, transparent);
+				opacity: 0;
+				transition: .3s ease;
+			}
+
+			&.slick-active {
+				&:hover {
+					&:after {
+						opacity: .5;
+					}
+				}
+			}
+
+			&.slick-current {
+				transform: scale(1.5);
+				transform-origin: left;
+				z-index: 5;
+
+				&:after {
+					opacity: 0!important;
+				}
+
+				&:before {
+					opacity: 1;
+				}
+
+				@media (max-width: $xs) {
+					transform: scale(1);
+				}
+
+				& + .slick-active {
+					transform: scale(1.15);
+
+					@media (max-width: $md) {
+						transform: scale(1);
+					}
+
+					& + .slick-active {
+						z-index: -1;
+					}
+				}
+
+				.inner {
+					opacity: 1;
+				}
+			}
+
+			.inner {
+				opacity: 0;
+				transition: .3s ease;
+				z-index: 2;
+				display: flex;
+				flex-direction: column;
+				transform: scale(calc(1 / 1.5));
+				transform-origin: left;
+				padding: 30px;
+
+				@media (max-width: $xs) {
+					transform: scale(1);
+				}
+
+				h3 {
+					color: #fff;
+					margin: 0;
+					width: 150%;
+
+					@media (max-width: $xs) {
+						width: 100%;
+					}
+				}
+
+				span {
+					color: $primary;
+					font-size: 16px;
+					width: 150%;
+
+					@media (max-width: $xs) {
+						width: 100%;
+					}
+				}
+			}
+
+
+			&:nth-child(1) {
+				background-image: url('bg.jpg');
+			}
+		
+			&:nth-child(2) {
+				background-image: url('bg2.jpg');
+			}
+
+			&:nth-child(3) {
+				background-image: url('bg3.jpg');
+			}
+
+			&:nth-child(4) {
+				background-image: url('bg.jpg');
+			}
+
+			&:nth-child(5) {
+				background-image: url('bg2.jpg');
+			}
+		}
+	}
+}

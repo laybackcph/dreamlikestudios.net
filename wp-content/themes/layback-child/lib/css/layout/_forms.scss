@@ -1,0 +1,322 @@
+/* Labels
+------------------------------------------------------*/
+
+label {
+	box-sizing: border-box;
+	user-select: none;
+	margin-bottom: 5px;
+}
+
+/* Base
+------------------------------------------------------*/
+
+input[type="text"],
+input[type="password"],
+input[type="color"],
+input[type="email"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+textarea,
+select{
+	border-radius: 5px;
+	box-sizing: border-box;
+	border: 1px solid $border;
+	background-color: #fff;
+	appearance: none;
+	font-size: 0.876em;
+	outline: 0;
+
+	&:focus{
+		border-color: $primary;
+	}
+
+	@media only screen and (max-width: $md) {
+		font-size: $fontsize;
+	}
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="color"],
+input[type="email"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+textarea {
+	width: 100%;
+	margin: 0;
+
+	&::-webkit-input-placeholder {
+		color: $midgray;
+	}
+
+	&::-moz-placeholder {
+		color: $midgray;
+	}
+
+	&:-ms-input-placeholder {
+		color: $midgray;
+	}
+
+	&:-moz-placeholder {
+		color: $midgray;
+	}
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="color"],
+input[type="email"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+select{
+	padding: 0 15px;
+	height: 50px;
+}
+
+/* Textarea
+------------------------------------------------------*/
+
+textarea {
+	padding: 15px;
+	resize: none;
+}
+
+/* Radio & checkbox
+------------------------------------------------------*/
+
+input[type="radio"],
+input[type="checkbox"]{
+	background-color: #fff;
+	border: 1px solid $border;
+	appearance: none;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+	position: relative;
+	top: 7px;
+	outline: 0;
+
+	&:focus{
+		border-color: $primary;
+	}
+
+	&:checked {
+		background-color: #000;
+	}
+
+}
+
+input[type="radio"]{
+
+	&:checked{
+		position: relative;
+
+		&:before{
+			content: ' ';
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: $lightgray;
+			border-radius: 50%;
+		}
+	}
+}
+
+input[type="checkbox"] {
+	background-repeat: no-repeat;
+	background-size: 10px auto;
+	background-position: center;
+
+	&:checked {
+		background-image: url(../images/input-check-checked.svg);
+	}
+
+}
+
+/* Remove native number arrows
+------------------------------------------------------*/
+// input[type='number']::-webkit-inner-spin-button,
+// input[type='number']::-webkit-outer-spin-button {
+// 	margin: 0;
+// }
+
+
+/* Select
+------------------------------------------------------*/
+
+select {
+	background: #fff url(../images/select-arrow.svg) no-repeat;
+	background-position: center right 15px;
+	background-size: 10px auto;
+	width: 100%;
+	padding-right: 40px;
+}
+
+/* Formidable forms
+------------------------------------------------------*/
+.frm_forms{
+
+	/* Base
+	------------------------------------------------------*/
+
+	.frm_form_field{
+		margin-bottom: 15px;
+	}
+
+	fieldset{
+		border: 0;
+		padding: 0;
+	}
+
+	/* Hidden
+	------------------------------------------------------*/
+
+	.frm_screen_reader,
+	.frm_hidden {
+		display: none;
+	}
+
+	/* Description
+	------------------------------------------------------*/
+
+	.frm_description{
+		font-size: 0.876em;
+		font-style: italic;
+		display: none;
+	}
+
+	/* Label
+	------------------------------------------------------*/
+
+	label.frm_primary_label{
+		display: block;
+		font-size: 0.876em;
+		font-weight: 400;
+	}
+
+	/* Javascript / HTML5 required fields
+	------------------------------------------------------*/
+
+	.frm_required{
+		color: red;
+	}
+
+	.frm_error{
+		background-color: $lightgray;
+		color: #000;
+		margin: 0 0 10px 0;
+		padding: 10px;
+		border: 1px solid $midgray;
+		border-width: 0 1px 1px 1px;
+		font-size: 0.876em;
+		display: none;
+	}
+
+	.frm_blank_field{
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		input[type="number"],
+		input[type="password"],
+		input[type="url"],
+		textarea,
+		select{
+			border-color: red;
+		}
+
+	}
+
+	/* Fields
+	------------------------------------------------------*/
+
+	.frm_time_wrap{
+		display: flex;
+		flex-wrap: nowrap;
+
+		span[dir="ltr"]{
+			display: flex;
+			flex-wrap: nowrap;
+			flex-grow: 1;
+			width: 50%;
+			margin-right: 5px;
+
+			.frm_time_sep{
+				flex-grow: 1;
+				width: 20px;
+				text-align: center;
+				line-height: 40px;
+				padding: 0;
+				display: block;
+			}
+
+			.frm_time_select{
+				margin-left: 0;
+			}
+		}
+
+		.frm_time_select{
+			flex-grow: 1;
+			width: 50%;
+			margin-left: 5px;
+		}
+
+	}
+
+	.frm_checkbox,
+	.frm_radio{
+
+		label{
+			font-size: 0.876em;
+			cursor: pointer;
+			display: block;
+			line-height: 24px;
+		}
+	}
+
+	/* File upload
+	------------------------------------------------------*/
+
+	.frm_dropzone{
+		width: 100%;
+		max-width: initial;
+
+		.dz-message{
+			width: 100%;
+		}
+
+	}
+
+	/* Submission
+	------------------------------------------------------*/
+
+	.frm_submit{
+
+		.frm_ajax_loading{
+			display: none;
+		}
+
+	}
+
+}

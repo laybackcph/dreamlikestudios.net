@@ -1,0 +1,51 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-features {
+	margin: 100px auto;
+	padding: 0 15px;
+
+	.features {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -15px;
+
+		.feature {
+			text-align: center;
+			margin: 15px 0;
+			font-size: 18px;
+			opacity: 0;
+			transition: .3s ease;
+			flex: 1;
+			min-width: 25%;
+
+			@media (max-width: $sm) {
+				min-width: 33.33%;
+			}
+
+			@media (max-width: $xs) {
+				min-width: 50%;
+			}
+
+			&.visible {
+				opacity: 1;
+			}
+
+			.icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $darkblue;
+				font-size: 48px;
+				margin: 0 15px 10px;
+				border-radius: 5px;
+				height: 200px;
+
+				@media (max-width: $xs) {
+					height: unset;
+					padding: 30px 0;
+				}
+			}
+		}	
+	}
+}

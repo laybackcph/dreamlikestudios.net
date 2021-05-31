@@ -1,0 +1,70 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-partners {
+	padding: 0 15px;
+	margin: 50px auto;
+	overflow-x: clip;
+
+	#partners {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+
+		&.visible {
+			.partner {
+				transform: translateX(0);
+			}
+		}
+
+		.partner {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 30px;
+			background-color: $darkblue;
+			color: $lightblue;
+			font-size: 28px;
+			flex: 1;
+			white-space: nowrap;
+			margin: 15px;
+			height: 200px;
+			transform: translateX(100vw);
+			transition: transform .6s ease-out, background-color .3s ease;
+			border-radius: 5px;
+
+			&.visible {
+				transform: translateX(0);
+			}
+
+			&[href] {
+				&:hover {
+					background-color: lighten($darkblue, 5%);
+				}
+			}
+
+			@media (max-width: $md) {				
+				height: 150px;
+			}
+
+			@media (max-width: $xs) {
+				padding: 30px 15px;
+				width: 100%;
+				flex: unset;
+				font-size: 22px;
+			}
+
+			img {
+				max-height: 100px;
+				max-width: 200px;
+				height: 100%;
+				object-fit: contain;
+				filter: invert(47%) sepia(16%) saturate(1261%) hue-rotate(197deg) brightness(84%) contrast(88%);
+
+				@media (max-width: $xs) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

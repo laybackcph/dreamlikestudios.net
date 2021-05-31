@@ -1,0 +1,172 @@
+.block-projects {
+  margin: 50px auto;
+  padding: 0 15px; }
+  .block-projects #our-projects {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    padding-bottom: 55px;
+    margin-top: 15px; }
+    .block-projects #our-projects.visible {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+    .block-projects #our-projects .slick-list {
+      padding: 5% 0; }
+      @media (max-width: 576px) {
+        .block-projects #our-projects .slick-list {
+          padding: 15px 0; } }
+    .block-projects #our-projects .slick-arrow {
+      position: absolute;
+      bottom: 0;
+      background-color: transparent;
+      border: 1px solid #fff;
+      width: 40px;
+      height: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #fff;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease; }
+      .block-projects #our-projects .slick-arrow:hover {
+        color: #FF01B3;
+        border-color: #FF01B3; }
+      .block-projects #our-projects .slick-arrow.slick-prev {
+        left: 0; }
+      .block-projects #our-projects .slick-arrow.slick-next {
+        left: 45px; }
+    .block-projects #our-projects .project {
+      -webkit-transition: all 0.6s ease-out;
+      -o-transition: all 0.6s ease-out;
+      transition: all 0.6s ease-out;
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      background-image: url("bg3.jpg"); }
+      .block-projects #our-projects .project:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(13, 14, 34, 0.73);
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease; }
+      .block-projects #our-projects .project:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 80%;
+        width: 100%;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#0D0E22), to(transparent));
+        background-image: -webkit-linear-gradient(bottom, #0D0E22, transparent);
+        background-image: -o-linear-gradient(bottom, #0D0E22, transparent);
+        background-image: linear-gradient(to top, #0D0E22, transparent);
+        opacity: 0;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease; }
+      .block-projects #our-projects .project.slick-active:hover:after {
+        opacity: .5; }
+      .block-projects #our-projects .project.slick-current {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+        transform-origin: left;
+        z-index: 5; }
+        .block-projects #our-projects .project.slick-current:after {
+          opacity: 0 !important; }
+        .block-projects #our-projects .project.slick-current:before {
+          opacity: 1; }
+        @media (max-width: 576px) {
+          .block-projects #our-projects .project.slick-current {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1); } }
+        .block-projects #our-projects .project.slick-current + .slick-active {
+          -webkit-transform: scale(1.15);
+          -ms-transform: scale(1.15);
+          transform: scale(1.15); }
+          @media (max-width: 1024px) {
+            .block-projects #our-projects .project.slick-current + .slick-active {
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1); } }
+          .block-projects #our-projects .project.slick-current + .slick-active + .slick-active {
+            z-index: -1; }
+        .block-projects #our-projects .project.slick-current .inner {
+          opacity: 1; }
+      .block-projects #our-projects .project .inner {
+        opacity: 0;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+        z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-transform: scale(calc(1 / 1.5));
+        -ms-transform: scale(calc(1 / 1.5));
+        transform: scale(calc(1 / 1.5));
+        -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+        transform-origin: left;
+        padding: 30px; }
+        @media (max-width: 576px) {
+          .block-projects #our-projects .project .inner {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1); } }
+        .block-projects #our-projects .project .inner h3 {
+          color: #fff;
+          margin: 0;
+          width: 150%; }
+          @media (max-width: 576px) {
+            .block-projects #our-projects .project .inner h3 {
+              width: 100%; } }
+        .block-projects #our-projects .project .inner span {
+          color: #FF01B3;
+          font-size: 16px;
+          width: 150%; }
+          @media (max-width: 576px) {
+            .block-projects #our-projects .project .inner span {
+              width: 100%; } }
+      .block-projects #our-projects .project:nth-child(1) {
+        background-image: url("bg.jpg"); }
+      .block-projects #our-projects .project:nth-child(2) {
+        background-image: url("bg2.jpg"); }
+      .block-projects #our-projects .project:nth-child(3) {
+        background-image: url("bg3.jpg"); }
+      .block-projects #our-projects .project:nth-child(4) {
+        background-image: url("bg.jpg"); }
+      .block-projects #our-projects .project:nth-child(5) {
+        background-image: url("bg2.jpg"); }

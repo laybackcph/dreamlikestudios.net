@@ -1,0 +1,45 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-video-parallax {
+	overflow: hidden;
+	margin: 50px auto;
+	width: 100%;
+	position: relative;
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		z-index: 6;
+	}
+
+	&:before {
+		top: 0;
+		background-image: linear-gradient(to bottom, $bgc, transparent);
+		z-index: 6;
+	}
+
+	&:after {
+		bottom: 0;
+		background-image: linear-gradient(to top, $bgc, transparent);
+	}
+
+	video {
+		width: 100%;
+		// max-height: 100vh;
+		vertical-align: middle;
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+		pointer-events: none;
+	}
+}
