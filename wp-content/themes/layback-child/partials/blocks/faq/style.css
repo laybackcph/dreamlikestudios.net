@@ -1,5 +1,5 @@
 .block-faq {
-  margin: 100px auto;
+  margin: 150px auto;
   padding: 0 15px; }
   .block-faq h2 {
     -webkit-box-pack: center;
@@ -81,3 +81,6 @@
         transform: translate(-50%, -50%) rotate(360deg); }
       .block-faq .accordion li.open .accordion--headline {
         border-radius: 5px 5px 0 0; }
+
+.wp-admin .block-faq .accordion li {
+  opacity: 1; }

@@ -30,7 +30,7 @@
 			margin: 15px;
 			height: 200px;
 			transform: translateX(100vw);
-			transition: transform .6s ease-out, background-color .3s ease;
+			transition: transform .6s ease-out, background-color .3s ease, color .3s ease;
 			border-radius: 5px;
 
 			&.visible {
@@ -40,6 +40,15 @@
 			&[href] {
 				&:hover {
 					background-color: lighten($darkblue, 5%);
+				}
+			}
+
+
+			&:hover {
+				color: $primary;
+
+				img {
+					filter: none;
 				}
 			}
 
@@ -65,6 +74,14 @@
 					width: 100%;
 				}
 			}
+		}
+	}
+}
+
+.wp-admin .block-partners {
+	#partners {
+		.partner {
+			transform: translateX(0);
 		}
 	}
 }

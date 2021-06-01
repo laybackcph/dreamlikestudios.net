@@ -4,6 +4,10 @@
 	function lb_enqueue_files() 
 	{
 
+		// Fancybox
+		wp_enqueue_style( 'fancyboxcss', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', false, '3.5.7', 'all' );
+		wp_enqueue_script( 'fancyjs', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', array('jquery'), '3.5.7', true );
+		
 		/* Normalize
 		------------------------------------------------------------------ */
 

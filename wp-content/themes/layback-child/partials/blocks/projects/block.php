@@ -65,7 +65,7 @@
 	  ?>
 	
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
-	    	<h2><span class="dots"></span><?php _e('Our projects', 'layback'); ?></h2>
+	    	<h2><span class="dots"></span><?php echo $title; ?></h2>
 			<div id="our-projects">
 
 				<?php foreach ($projects as $project) : ?>

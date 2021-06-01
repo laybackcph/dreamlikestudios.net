@@ -46,6 +46,22 @@
 					padding: 30px 0;
 				}
 			}
+
+			img {
+				width: 48px;
+			}
 		}	
+	}
+}
+
+.wp-admin .block-features {
+	.features {
+		.feature {
+			opacity: 1;
+
+			.icon {
+				height: 150px;
+			}
+		}
 	}
 }

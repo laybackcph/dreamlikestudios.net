@@ -49,6 +49,10 @@
 			$block_align 	= $block['align'];
 		}
 
+		$highlights 		= get_field('highlights', 'options');
+
+
+
 	  ?>
 	
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">	
@@ -56,48 +60,27 @@
 			<h2><span class="dots"></span><?php echo 'Lorem ipsum?!'; ?></h2>
 
 			<div class="features">
-				<div class="feature">
-					<div class="icon">
-						<i class="fab fa-html5"></i>
-					</div>
-					<h5>HTML5</h5>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<i class="fab fa-css3-alt"></i>
-					</div>
-					<h5>CSS3</h5>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<i class="fab fa-bootstrap"></i>
-					</div>
-					<h5>Bootstrap</h5>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<i class="fad fa-font-case"></i>
-					</div>
-					<h5>Google Fonts</h5>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<i class="fas fa-cogs"></i>
-					</div>
-					<h5>Lorem</h5>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<i class="fal fa-envelope-open-text"></i>
-					</div>
-					<h5>Ipsum</h5>
-				</div>
-				<div class="feature">
-					<div class="icon">
-						<i class="fal fa-user-headset"></i>
-					</div>
-					<h5>Support 24/7</h5>
-				</div>
+				<?php
+					if( have_rows('highlights', 'option') ) :
+						while ( have_rows('highlights', 'option') ) : the_row(); 
+							$icon_fa	= get_sub_field('icon_fa');
+							$icon		= get_sub_field('icon');
+							$title		= get_sub_field('title');
+							?>
+								<div class="feature">
+									<div class="icon">
+										<?php if($icon_fa) : ?>
+											<i class="<?php echo $icon_fa; ?>"></i>
+										<?php elseif ($icon) :?>
+											<img src="<?php echo $icon['url']; ?>" alt="">
+										<?php endif; ?>
+									</div>
+									<h5><?php echo $title; ?></h5>
+								</div>
+						<?php 
+					endwhile;
+				endif; 
+			?>
 			</div>
 	    </div>
     

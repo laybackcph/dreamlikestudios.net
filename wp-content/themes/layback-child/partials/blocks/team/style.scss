@@ -1,0 +1,54 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-team {
+	margin: 100px auto;
+	padding: 0 15px;
+
+	#the-team {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;	
+
+		.team-member {
+			text-align: center;
+			width: calc(25% - 30px);
+			display: flex;
+			flex-direction: column;
+			margin: 0 15px 30px;
+
+			@media (max-width: $md) {
+				width: calc(33.33% - 30px);
+			}
+
+			@media (max-width: $sm) {
+				width: calc(50% - 30px);
+			}
+
+			@media (max-width: $xs) {
+				width: calc(100%);
+			}
+
+			img {
+				flex-grow: 1;
+				object-fit: cover;
+				margin-bottom: 10px;
+				min-height: 250px;
+				max-height: 300px;
+				object-position: top;
+			}
+
+			h3 {
+				margin-bottom: 10px;
+				font-size: 22px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			i {
+				font-size: 22px;
+				margin: 0 10px;
+			}
+		}
+	}
+}

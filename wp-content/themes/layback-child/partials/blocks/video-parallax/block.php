@@ -49,10 +49,17 @@
 			$block_align 	= $block['align'];
 		}
 
+		$video 				= get_field('video');
+		$parallax_img		= get_field('parallax_img');
+
 	  ?>
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">	
-			<video src="https://local.dreamlikestudios.dk/wp-content/uploads/2021/05/Video%20Hero-1.m4v" muted></video>
-			<img src="./wp-content/themes/layback-child/partials/blocks/video-parallax/cave.png" alt="cave">
+	    	<?php if($video) : ?>
+				<video src="<?php echo $video['url']; ?>" muted></video>
+	    	<?php endif; ?>
+			<?php if($parallax_img) : ?>
+				<img src="<?php echo $parallax_img['url']; ?>" alt="parallax">
+			<?php endif; ?>
 	    </div>
     
     <?php }

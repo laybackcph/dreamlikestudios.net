@@ -1,0 +1,75 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-process {
+	margin: 100px auto;
+	padding: 0 15px;
+
+	h2 {
+		display: block;
+		text-align: center;
+	}
+
+	.process {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		margin-top: 30px;
+
+		@media (max-width: $sm) {
+			flex-wrap: wrap;
+		}
+
+		.process-single {
+			flex: 1;
+			max-width: 200px;
+			padding: 15px;
+
+			&.visible {
+				.circle-chart {
+					.circle-chart__circle {
+					  	animation: circle-chart-fill 2s reverse;
+					}
+				}
+			}
+
+			@media (max-width: $sm) {
+				width: 50%;
+				max-width: unset;
+				flex: unset;
+			}
+
+			.icon {
+				position: relative;
+				max-width: 200px;
+				margin: 0 auto;
+
+				i {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					color: $secondary;
+					font-size: 32px;	
+				}
+
+				.circle-chart {
+					.circle-chart__background {
+						stroke: $darkblue;
+					}
+
+					.circle-chart__circle {
+					  	transform: rotate(-90deg);
+					  	transform-origin: center;
+					  	stroke: $primary;
+					}
+				}
+			}
+		}
+
+		@keyframes circle-chart-fill {
+		  	to { 
+		  		stroke-dasharray: 0 100;
+		  	}
+		}
+	}
+}

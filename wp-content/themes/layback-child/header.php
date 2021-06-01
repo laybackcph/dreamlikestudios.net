@@ -43,7 +43,7 @@
 					wp_nav_menu( $args );
 				?>
 
-				<button class="btn"><?php _e('Contact', 'layback'); ?></button>
+				<button class="btn hover"><?php _e('Contact', 'layback'); ?></button>
 			</nav>
 		</div>
 		<div class="scroll_line"></div>

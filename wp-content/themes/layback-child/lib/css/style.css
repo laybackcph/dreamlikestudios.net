@@ -254,6 +254,7 @@ h2 {
     margin-right: 27px;
     height: 28px;
     position: relative;
+    display: inline-block;
     z-index: 6; }
     h2 .dots:before, h2 .dots:after {
       content: "";
@@ -439,6 +440,44 @@ hr {
   .wp-block-button__link.wide,
   .wp-block-button .wp-block-button__link:link.wide {
     width: 100%; }
+  .btn.hover,
+  .btn:link.hover,
+  .wp-block-button__link.hover,
+  .wp-block-button .wp-block-button__link:link.hover {
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out; }
+    .btn.hover::before,
+    .btn:link.hover::before,
+    .wp-block-button__link.hover::before,
+    .wp-block-button .wp-block-button__link:link.hover::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 100%;
+      right: 100%;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background-color: #0090FF;
+      -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+      transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+      -webkit-transition: -webkit-transform 0.45s ease-in-out;
+      transition: -webkit-transform 0.45s ease-in-out;
+      -o-transition: transform 0.45s ease-in-out;
+      transition: transform 0.45s ease-in-out;
+      transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out; }
+    .btn.hover:hover::before,
+    .btn:link.hover:hover::before,
+    .wp-block-button__link.hover:hover::before,
+    .wp-block-button .wp-block-button__link:link.hover:hover::before {
+      -webkit-transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15);
+      transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15); }
 
 /* Labels
 ------------------------------------------------------*/
@@ -789,6 +828,8 @@ ol {
 ------------------------------------------------------*/
 .site-header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 999;
   -webkit-transition: .3s ease;
@@ -905,46 +946,32 @@ ol {
             .site-header .site-navigation ul li .sub-menu li .sub-menu {
               display: none; }
     .site-header .site-navigation .btn {
-      position: relative;
-      overflow: hidden;
       height: 32px;
-      margin-left: 15px;
-      z-index: 1;
-      -webkit-transition: color 0.4s ease-in-out;
-      -o-transition: color 0.4s ease-in-out;
-      transition: color 0.4s ease-in-out; }
-      .site-header .site-navigation .btn::before {
-        content: '';
-        z-index: -1;
-        position: absolute;
-        top: 100%;
-        right: 100%;
-        width: 1em;
-        height: 1em;
-        border-radius: 50%;
-        background-color: #0090FF;
-        -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-        transform-origin: center;
-        -webkit-transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
-        transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
-        -webkit-transition: -webkit-transform 0.45s ease-in-out;
-        transition: -webkit-transform 0.45s ease-in-out;
-        -o-transition: transform 0.45s ease-in-out;
-        transition: transform 0.45s ease-in-out;
-        transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out; }
-      .site-header .site-navigation .btn:hover::before {
-        -webkit-transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15);
-        transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15); }
+      margin-left: 15px; }
 
 .site-footer {
-  padding: 50px 0 15px; }
+  position: relative;
+  padding: 50px 0 15px;
+  background-color: #000; }
+  .site-footer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#000), to(#0D0E22));
+    background-image: -webkit-linear-gradient(bottom, #000, #0D0E22);
+    background-image: -o-linear-gradient(bottom, #000, #0D0E22);
+    background-image: linear-gradient(to top, #000, #0D0E22); }
   .site-footer .site-navigation {
     margin: 50px 0; }
     .site-footer .site-navigation ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
@@ -967,6 +994,8 @@ ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

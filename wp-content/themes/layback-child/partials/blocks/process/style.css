@@ -1,0 +1,65 @@
+.block-process {
+  margin: 100px auto;
+  padding: 0 15px; }
+  .block-process h2 {
+    display: block;
+    text-align: center; }
+  .block-process .process {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px; }
+    @media (max-width: 768px) {
+      .block-process .process {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+    .block-process .process .process-single {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      max-width: 200px;
+      padding: 15px; }
+      .block-process .process .process-single.visible .circle-chart .circle-chart__circle {
+        animation: circle-chart-fill 2s reverse; }
+      @media (max-width: 768px) {
+        .block-process .process .process-single {
+          width: 50%;
+          max-width: unset;
+          -webkit-box-flex: unset;
+          -ms-flex: unset;
+          flex: unset; } }
+      .block-process .process .process-single .icon {
+        position: relative;
+        max-width: 200px;
+        margin: 0 auto; }
+        .block-process .process .process-single .icon i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          color: #0090FF;
+          font-size: 32px; }
+        .block-process .process .process-single .icon .circle-chart .circle-chart__background {
+          stroke: #171838; }
+        .block-process .process .process-single .icon .circle-chart .circle-chart__circle {
+          -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+          -webkit-transform-origin: center;
+          -ms-transform-origin: center;
+          transform-origin: center;
+          stroke: #FF01B3; }
+
+@-webkit-keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100; } }
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100; } }

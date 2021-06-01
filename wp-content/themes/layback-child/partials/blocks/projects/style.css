@@ -170,3 +170,14 @@
         background-image: url("bg.jpg"); }
       .block-projects #our-projects .project:nth-child(5) {
         background-image: url("bg2.jpg"); }
+
+.wp-admin .block-projects #our-projects {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .wp-admin .block-projects #our-projects .project {
+    height: 250px;
+    width: 33.33%; }

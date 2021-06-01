@@ -1,0 +1,14 @@
+.block-cta {
+  margin: 100px auto;
+  padding: 0 15px; }
+  .block-cta .frm_forms {
+    width: 100%; }
+    .block-cta .frm_forms .frm_form_field {
+      margin: 0; }
+      .block-cta .frm_forms .frm_form_field input,
+      .block-cta .frm_forms .frm_form_field textarea {
+        color: #fff;
+        margin-bottom: 30px;
+        background-color: transparent; }
+    .block-cta .frm_forms .frm_submit {
+      margin-top: -5px; }

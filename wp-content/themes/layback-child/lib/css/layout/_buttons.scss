@@ -55,4 +55,31 @@
 		width: 100%;
 	}
 
+	&.hover {
+		overflow: hidden;
+		z-index: 1;
+		transition: color 0.4s ease-in-out;
+		
+		&::before {
+		  content: '';
+		  z-index: -1;
+		  position: absolute;
+		  top: 100%;
+		  right: 100%;
+		  width: 1em;
+		  height: 1em;
+		  border-radius: 50%;
+		  background-color: $secondary;
+		  transform-origin: center;
+		  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+		  transition: transform 0.45s ease-in-out;
+		}
+
+		&:hover {
+		  	&::before {
+			  	transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15);
+			}
+		}
+	}
+
 }

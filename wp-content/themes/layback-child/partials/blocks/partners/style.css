@@ -37,11 +37,11 @@
       -webkit-transform: translateX(100vw);
       -ms-transform: translateX(100vw);
       transform: translateX(100vw);
-      -webkit-transition: background-color .3s ease, -webkit-transform .6s ease-out;
-      transition: background-color .3s ease, -webkit-transform .6s ease-out;
-      -o-transition: transform .6s ease-out, background-color .3s ease;
-      transition: transform .6s ease-out, background-color .3s ease;
-      transition: transform .6s ease-out, background-color .3s ease, -webkit-transform .6s ease-out;
+      -webkit-transition: background-color .3s ease, color .3s ease, -webkit-transform .6s ease-out;
+      transition: background-color .3s ease, color .3s ease, -webkit-transform .6s ease-out;
+      -o-transition: transform .6s ease-out, background-color .3s ease, color .3s ease;
+      transition: transform .6s ease-out, background-color .3s ease, color .3s ease;
+      transition: transform .6s ease-out, background-color .3s ease, color .3s ease, -webkit-transform .6s ease-out;
       border-radius: 5px; }
       .block-partners #partners .partner.visible {
         -webkit-transform: translateX(0);
@@ -49,6 +49,11 @@
         transform: translateX(0); }
       .block-partners #partners .partner[href]:hover {
         background-color: #1e204a; }
+      .block-partners #partners .partner:hover {
+        color: #FF01B3; }
+        .block-partners #partners .partner:hover img {
+          -webkit-filter: none;
+          filter: none; }
       @media (max-width: 1024px) {
         .block-partners #partners .partner {
           height: 150px; } }
@@ -71,3 +76,8 @@
         @media (max-width: 576px) {
           .block-partners #partners .partner img {
             width: 100%; } }
+
+.wp-admin .block-partners #partners .partner {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }

@@ -1,0 +1,25 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-cta {
+	margin: 100px auto;
+	padding: 0 15px;
+
+	.frm_forms {
+		width: 100%;
+
+		.frm_form_field {
+			margin: 0;
+
+			input,
+			textarea {
+				color: #fff;
+				margin-bottom: 30px;
+				background-color: transparent;
+			}
+		}
+
+		.frm_submit {
+			margin-top: -5px;
+		}
+	}
+}

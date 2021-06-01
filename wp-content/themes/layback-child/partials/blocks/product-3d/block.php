@@ -49,10 +49,10 @@
 			$block_align 	= $block['align'];
 		}
 
-		$product3D = get_field('product_3d');
+		$product3D 			= get_field('product_3d');
 
-		$controls = true;
-		$autoRotation = true;
+		$controls 			= get_field('controls');
+		$autorotate 		= get_field('autorotate');
 	  ?>
 	
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">	
@@ -177,7 +177,7 @@
 				    const elapsedTime = clock.getElapsedTime();
 
 				    // Update objects
-				    <?php if($autoRotation) : ?>
+				    <?php if($autorotate) : ?>
 					    if(model != undefined)
 					    {
 				    		model.rotation.y += .003;

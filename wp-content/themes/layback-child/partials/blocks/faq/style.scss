@@ -1,7 +1,7 @@
 @import '../../../lib/css/abstract/_variables.scss';
 
 .block-faq {
-	margin: 100px auto;
+	margin: 150px auto;
 	padding: 0 15px;
 
 	h2 {
@@ -99,5 +99,13 @@
 	    		}
 	    	}
 	  	}
+	}
+}
+
+.wp-admin .block-faq {
+	.accordion {
+		li {
+			opacity: 1;
+		}
 	}
 }

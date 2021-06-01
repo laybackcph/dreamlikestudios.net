@@ -185,3 +185,16 @@
 		}
 	}
 }
+
+.wp-admin .block-projects {
+	#our-projects {
+		opacity: 1;
+		display: flex;
+		flex-wrap: wrap;
+
+		.project {
+			height: 250px;
+			width: 33.33%;
+		}
+	}
+}

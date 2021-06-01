@@ -49,6 +49,17 @@
 			$block_align 	= $block['align'];
 		}
 
+		$aFaq		= get_field('faq');
+
+		if(!$aFaq) 
+		{
+			$args =  array(
+				'posts_per_page' => -1,
+				'post_type' => 'faq',
+			);
+
+			$aFaq = get_posts($args);
+		}
 	  ?>
 	
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">	
@@ -56,21 +67,16 @@
 			<h2><span class="dots"></span><?php echo 'Lorem ipsum?!'; ?></h2>
 
 			<ul class="accordion">
-			  	<li>
-			  		
-			    	<div class="accordion--headline">
-			    		<span class="accordion--close"></span>
-				    	Accordion #1
-				    </div>
-			    	<div class="accordion--content">Accordion content is here</div>
-			  	</li>
-			  	<li>
-			    	<div class="accordion--headline">
-			    		<span class="accordion--close"></span>
-				    	Accordion #2
-				    </div>
-			    	<div class="accordion--content">Accordion content is here</div>
-			  	</li>
+				<?php foreach ($aFaq as $faq) : ?>
+				  	<li>
+				  		
+				    	<div class="accordion--headline">
+				    		<span class="accordion--close"></span>
+					    	<?php echo $faq->post_title; ?>
+					    </div>
+				    	<div class="accordion--content"><?php echo $faq->post_content; ?></div>
+				  	</li>
+				<?php endforeach; ?>
 			</ul>
 	    </div>
     
