@@ -43,7 +43,7 @@
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-          color: #0090FF;
+          color: #FF01B3;
           font-size: 32px; }
         .block-process .process .process-single .icon .circle-chart .circle-chart__background {
           stroke: #171838; }
@@ -54,7 +54,7 @@
           -webkit-transform-origin: center;
           -ms-transform-origin: center;
           transform-origin: center;
-          stroke: #FF01B3; }
+          stroke: #0090FF; }
 
 @-webkit-keyframes circle-chart-fill {
   to {

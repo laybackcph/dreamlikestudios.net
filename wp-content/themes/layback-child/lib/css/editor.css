@@ -61,10 +61,10 @@ h2 {
       z-index: -1;
       opacity: 0; }
     h2 .dots:before {
-      background-color: #0090FF;
+      background-color: #FF01B3;
       top: -250px; }
     h2 .dots:after {
-      background-color: #FF01B3;
+      background-color: #0090FF;
       bottom: -250px; }
     h2 .dots.visible:before, h2 .dots.visible:after {
       left: 0;
@@ -117,13 +117,13 @@ a,
 a:link {
   text-decoration: none;
   outline: 0;
-  color: #FF01B3; }
+  color: #0090FF; }
   a:hover, a:focus, a:active,
   a:link:hover,
   a:link:focus,
   a:link:active {
     text-decoration: none;
-    color: #cd0090; }
+    color: #0073cc; }
 
 ul,
 ol {
@@ -147,7 +147,7 @@ hr {
   padding: 0; }
 
 .colored {
-  color: #FF01B3; }
+  color: #0090FF; }
 
 /* Layout
 ------------------------------------------------------*/
@@ -179,7 +179,7 @@ hr {
   width: fit-content;
   cursor: pointer;
   font-size: 1em;
-  background-color: #FF01B3;
+  background-color: #0090FF;
   border: 0;
   border-radius: 2px;
   color: #fff;
@@ -188,7 +188,7 @@ hr {
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
-  font-family: 'Sigmar One'; }
+  font-weight: 700; }
   @media only screen and (max-width: 768px) {
     .btn,
     .btn:link,
@@ -199,7 +199,7 @@ hr {
   .btn:link:hover,
   .wp-block-button__link:hover,
   .wp-block-button .wp-block-button__link:link:hover {
-    background-color: #ff34c2;
+    background-color: #33a6ff;
     color: #fff; }
   .btn[disabled="disabled"], .btn[disabled],
   .btn:link[disabled="disabled"],
@@ -220,7 +220,7 @@ hr {
     .wp-block-button__link[disabled]:hover,
     .wp-block-button .wp-block-button__link:link[disabled="disabled"]:hover,
     .wp-block-button .wp-block-button__link:link[disabled]:hover {
-      background-color: #FF01B3; }
+      background-color: #0090FF; }
   .btn.round,
   .btn:link.round,
   .wp-block-button__link.round,
@@ -252,7 +252,7 @@ hr {
       width: 1em;
       height: 1em;
       border-radius: 50%;
-      background-color: #0090FF;
+      background-color: #FF01B3;
       -webkit-transform-origin: center;
       -ms-transform-origin: center;
       transform-origin: center;

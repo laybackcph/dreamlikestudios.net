@@ -1,0 +1,80 @@
+.block-contact-map {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: #F9F9F9; }
+  .block-contact-map .contact-form-map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
+    .block-contact-map .contact-form-map .form-wrapper {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      color: #282828;
+      padding: 75px 0; }
+      @media (max-width: 1024px) {
+        .block-contact-map .contact-form-map .form-wrapper {
+          max-width: 100%; } }
+      @media (max-width: 1024px) {
+        .block-contact-map .contact-form-map .form-wrapper {
+          padding: 50px 0; } }
+      .block-contact-map .contact-form-map .form-wrapper h5 {
+        color: #0090FF;
+        margin: 0; }
+      .block-contact-map .contact-form-map .form-wrapper h3 {
+        text-transform: uppercase;
+        margin: 5px 0 20px;
+        color: #282828; }
+    .block-contact-map .contact-form-map .frm_forms {
+      margin: 35px 0 0; }
+      .block-contact-map .contact-form-map .frm_forms input, .block-contact-map .contact-form-map .frm_forms textarea {
+        border-radius: 5px; }
+      .block-contact-map .contact-form-map .frm_forms .frm_form_field label {
+        display: none; }
+      .block-contact-map .contact-form-map .frm_forms .frm_submit button {
+        border-radius: 5px; }
+        .block-contact-map .contact-form-map .frm_forms .frm_submit button:focus {
+          outline: none; }
+    .block-contact-map .contact-form-map .contact-map {
+      position: relative;
+      padding: 0; }
+      .block-contact-map .contact-form-map .contact-map .title-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #0090FF;
+        color: #fff;
+        width: 100%;
+        height: 100px; }
+        @media (max-width: 768px) {
+          .block-contact-map .contact-form-map .contact-map .title-wrapper {
+            height: 75px; } }
+        .block-contact-map .contact-form-map .contact-map .title-wrapper h3 {
+          margin: 0; }
+          @media (max-width: 768px) {
+            .block-contact-map .contact-form-map .contact-map .title-wrapper h3 {
+              font-size: 24px; } }
+      .block-contact-map .contact-form-map .contact-map iframe {
+        width: 100%;
+        height: calc(100% - 100px);
+        min-height: 500px;
+        vertical-align: middle; }
+        @media (max-width: 768px) {
+          .block-contact-map .contact-form-map .contact-map iframe {
+            min-height: 350px; } }

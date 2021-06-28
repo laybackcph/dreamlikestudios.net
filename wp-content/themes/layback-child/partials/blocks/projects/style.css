@@ -42,8 +42,8 @@
       -o-transition: .3s ease;
       transition: .3s ease; }
       .block-projects #our-projects .slick-arrow:hover {
-        color: #FF01B3;
-        border-color: #FF01B3; }
+        color: #0090FF;
+        border-color: #0090FF; }
       .block-projects #our-projects .slick-arrow.slick-prev {
         left: 0; }
       .block-projects #our-projects .slick-arrow.slick-next {
@@ -154,7 +154,7 @@
             .block-projects #our-projects .project .inner h3 {
               width: 100%; } }
         .block-projects #our-projects .project .inner span {
-          color: #FF01B3;
+          color: #0090FF;
           font-size: 16px;
           width: 150%; }
           @media (max-width: 576px) {

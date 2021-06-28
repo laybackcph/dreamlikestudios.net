@@ -270,10 +270,10 @@ h2 {
       z-index: -1;
       opacity: 0; }
     h2 .dots:before {
-      background-color: #0090FF;
+      background-color: #FF01B3;
       top: -250px; }
     h2 .dots:after {
-      background-color: #FF01B3;
+      background-color: #0090FF;
       bottom: -250px; }
     h2 .dots.visible:before, h2 .dots.visible:after {
       left: 0;
@@ -326,13 +326,13 @@ a,
 a:link {
   text-decoration: none;
   outline: 0;
-  color: #FF01B3; }
+  color: #0090FF; }
   a:hover, a:focus, a:active,
   a:link:hover,
   a:link:focus,
   a:link:active {
     text-decoration: none;
-    color: #cd0090; }
+    color: #0073cc; }
 
 ul,
 ol {
@@ -356,7 +356,7 @@ hr {
   padding: 0; }
 
 .colored {
-  color: #FF01B3; }
+  color: #0090FF; }
 
 /* Layout
 ------------------------------------------------------*/
@@ -388,7 +388,7 @@ hr {
   width: fit-content;
   cursor: pointer;
   font-size: 1em;
-  background-color: #FF01B3;
+  background-color: #0090FF;
   border: 0;
   border-radius: 2px;
   color: #fff;
@@ -397,7 +397,7 @@ hr {
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
-  font-family: 'Sigmar One'; }
+  font-weight: 700; }
   @media only screen and (max-width: 768px) {
     .btn,
     .btn:link,
@@ -408,7 +408,7 @@ hr {
   .btn:link:hover,
   .wp-block-button__link:hover,
   .wp-block-button .wp-block-button__link:link:hover {
-    background-color: #ff34c2;
+    background-color: #33a6ff;
     color: #fff; }
   .btn[disabled="disabled"], .btn[disabled],
   .btn:link[disabled="disabled"],
@@ -429,7 +429,7 @@ hr {
     .wp-block-button__link[disabled]:hover,
     .wp-block-button .wp-block-button__link:link[disabled="disabled"]:hover,
     .wp-block-button .wp-block-button__link:link[disabled]:hover {
-      background-color: #FF01B3; }
+      background-color: #0090FF; }
   .btn.round,
   .btn:link.round,
   .wp-block-button__link.round,
@@ -461,7 +461,7 @@ hr {
       width: 1em;
       height: 1em;
       border-radius: 50%;
-      background-color: #0090FF;
+      background-color: #FF01B3;
       -webkit-transform-origin: center;
       -ms-transform-origin: center;
       transform-origin: center;
@@ -528,7 +528,7 @@ select {
   input[type="url"]:focus,
   textarea:focus,
   select:focus {
-    border-color: #FF01B3; }
+    border-color: #0090FF; }
   @media only screen and (max-width: 1024px) {
     input[type="text"],
     input[type="password"],
@@ -651,7 +651,7 @@ input[type="checkbox"] {
   outline: 0; }
   input[type="radio"]:focus,
   input[type="checkbox"]:focus {
-    border-color: #FF01B3; }
+    border-color: #0090FF; }
   input[type="radio"]:checked,
   input[type="checkbox"]:checked {
     background-color: #000; }
@@ -840,7 +840,7 @@ ol {
   /* Navigation
 	------------------------------------------------------*/ }
   .site-header .scroll_line {
-    background-color: #FF01B3;
+    background-color: #0090FF;
     height: 3px;
     width: 0%;
     opacity: 0;
@@ -989,7 +989,7 @@ ol {
           -o-transition: .3s ease;
           transition: .3s ease; }
           .site-footer .site-navigation ul li a:hover {
-            color: #FF01B3; }
+            color: #0090FF; }
   .site-footer .socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1011,7 +1011,7 @@ ol {
       -o-transition: .3s ease;
       transition: .3s ease; }
       .site-footer .socials a:hover {
-        color: #FF01B3; }
+        color: #0090FF; }
   .site-footer .copyright {
     text-align: center;
     padding: 10px 0; }
@@ -1145,7 +1145,7 @@ div.alignwide {
       .slick-dots li button:focus {
         outline: none; }
     .slick-dots li.slick-active button {
-      background-color: #FF01B3;
+      background-color: #0090FF;
       width: 14px;
       height: 14px; }
 
@@ -1157,7 +1157,7 @@ div.alignwide {
   right: 15px;
   height: 60px;
   width: 60px;
-  background-color: #FF01B3;
+  background-color: #0090FF;
   color: #F9F9F9;
   font-size: 0.876em;
   font-weight: 600;
@@ -1222,7 +1222,7 @@ div.alignwide {
     right: 15px;
     height: 60px;
     width: 60px;
-    background-color: #FF01B3;
+    background-color: #0090FF;
     color: #F9F9F9;
     font-size: 0.876em;
     font-weight: 600;
@@ -1248,7 +1248,7 @@ div.alignwide {
       .mobilemenu nav ul li a {
         display: block;
         padding: 10px 15px;
-        color: #FF01B3;
+        color: #0090FF;
         border-bottom: 1px solid #ececec;
         text-decoration: none;
         text-align: center;
@@ -1259,7 +1259,7 @@ div.alignwide {
         height: 50px;
         background-color: transparent;
         border-left: 1px solid #ececec;
-        color: #FF01B3;
+        color: #0090FF;
         position: absolute;
         right: 0;
         top: 0;
@@ -1267,7 +1267,7 @@ div.alignwide {
         .mobilemenu nav ul li span:before {
           content: "";
           border: 8px solid transparent;
-          border-top-color: #FF01B3;
+          border-top-color: #0090FF;
           position: absolute;
           top: calc(50% - 3px);
           left: calc(50% - 8px); }

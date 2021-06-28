@@ -73,7 +73,7 @@
         right: 0;
         height: 50px;
         width: 50px;
-        background-color: #FF01B3;
+        background-color: #0090FF;
         color: #fff;
         border: none;
         cursor: pointer;
@@ -81,4 +81,4 @@
         -o-transition: .3s ease;
         transition: .3s ease; }
         .block-newsletter .inner form button:hover {
-          background-color: #ff34c2; }
+          background-color: #33a6ff; }
