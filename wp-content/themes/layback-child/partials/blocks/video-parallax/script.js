@@ -67,7 +67,6 @@ jQuery(document).ready(function ($){
     }
 
 
-
 	function openFullscreen(elem) 
 	{
 		if (elem.requestFullscreen) 

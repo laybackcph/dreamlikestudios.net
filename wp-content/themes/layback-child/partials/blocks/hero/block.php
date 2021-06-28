@@ -57,13 +57,13 @@
 	    	<?php if($particals) : ?>
 				<div id="particles-js"></div>
 			<?php endif; ?>
-			<div class="stripes">				
+			<!-- <div class="stripes">				
 				<div class="stripe one"></div>
 				<div class="stripe two"></div>
 				<div class="stripe three"></div>
 				<div class="stripe four"></div>
 				<div class="stripe five"></div>
-			</div>
+			</div> -->
 			<?php 
 				if( have_rows('slideshow') ) :
 					while ( have_rows('slideshow') ) : the_row();

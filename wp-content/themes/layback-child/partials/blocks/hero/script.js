@@ -13,14 +13,14 @@ jQuery(document).ready(function ($){
 	    }, 1300, 'easeInOutExpo');
 	});
 
-	function getRandomArbitrary(min, max) {
-	  	return Math.random() * (max - min) + min;
-	}
-	setTimeout(function() {		
-		jQuery('.block-hero .stripe').each( function( index, element ) {
-			jQuery(element).css("height", getRandomArbitrary(40, 90) + '%');
-		});
-	}, 1000);
+	// function getRandomArbitrary(min, max) {
+	//   	return Math.random() * (max - min) + min;
+	// }
+	// setTimeout(function() {		
+	// 	jQuery('.block-hero .stripe').each( function( index, element ) {
+	// 		jQuery(element).css("height", getRandomArbitrary(40, 90) + '%');
+	// 	});
+	// }, 1000);
 
 	// // Slider
 	// jQuery('.block-hero').slick({
