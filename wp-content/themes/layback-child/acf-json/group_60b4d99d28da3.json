@@ -22,6 +22,22 @@
             "mime_types": ""
         },
         {
+            "key": "field_60d96a3edc354",
+            "label": "Video fra youtube",
+            "name": "yt_vid",
+            "type": "oembed",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
             "key": "field_60b4d9cdf433b",
             "label": "Parallax billede",
             "name": "parallax_img",
@@ -63,5 +79,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1622464989
+    "modified": 1624861312
 }

@@ -27,9 +27,11 @@
 		background-image: linear-gradient(to top, $bgc, transparent);
 	}
 
-	video {
+	video, 
+	iframe {
 		width: 100%;
 		// max-height: 100vh;
+		height: 100vh;
 		vertical-align: middle;
 	}
 

@@ -14,7 +14,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
+  font-family: "Montserrat"; }
 
 h1 {
   font-size: 3em;
@@ -24,20 +24,64 @@ h1 {
   font-weight: 800; }
 
 h2 {
-  font-size: 2em;
+  font-size: 38px;
   margin: 0 0 16px 0;
   padding: 0;
   line-height: 1.2;
-  font-weight: 600; }
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 28px; } }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 24px; } }
+  h2 .dots {
+    margin-right: 27px;
+    height: 28px;
+    position: relative;
+    display: inline-block;
+    z-index: 6; }
+    h2 .dots:before, h2 .dots:after {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      position: absolute;
+      left: 0;
+      -webkit-transition: .6s ease-out;
+      -o-transition: .6s ease-out;
+      transition: .6s ease-out;
+      z-index: -1;
+      opacity: 0; }
+    h2 .dots:before {
+      background-color: #0090FF;
+      top: -250px; }
+    h2 .dots:after {
+      background-color: #FF01B3;
+      bottom: -250px; }
+    h2 .dots.visible:before, h2 .dots.visible:after {
+      left: 0;
+      opacity: 1; }
+    h2 .dots.visible:before {
+      top: 0; }
+    h2 .dots.visible:after {
+      bottom: 0; }
 
 h3,
 .h3 {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  font-size: 1.5em;
+  font-family: "Montserrat";
+  font-size: 28px;
   margin: 0 0 15px 0;
   padding: 0;
   line-height: 1.3;
-  font-weight: 600; }
+  font-weight: 700; }
 
 h4,
 .h4 {
@@ -73,13 +117,13 @@ a,
 a:link {
   text-decoration: none;
   outline: 0;
-  color: #323232; }
+  color: #FF01B3; }
   a:hover, a:focus, a:active,
   a:link:hover,
   a:link:focus,
   a:link:active {
     text-decoration: none;
-    color: #191919; }
+    color: #cd0090; }
 
 ul,
 ol {
@@ -96,11 +140,14 @@ blockquote {
     font-size: 3em; }
 
 hr {
-  border-top: 1px solid #bdc3c7;
+  border-top: 1px solid #282C3E;
   border-width: 2px 0 0;
   background-color: transparent;
   margin: 15px 0;
   padding: 0; }
+
+.colored {
+  color: #FF01B3; }
 
 /* Layout
 ------------------------------------------------------*/
@@ -132,15 +179,16 @@ hr {
   width: fit-content;
   cursor: pointer;
   font-size: 1em;
-  background-color: #323232;
+  background-color: #FF01B3;
   border: 0;
-  border-radius: 4px;
+  border-radius: 2px;
   color: #fff;
   height: 50px;
   padding: 0 25px;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  font-family: 'Sigmar One'; }
   @media only screen and (max-width: 768px) {
     .btn,
     .btn:link,
@@ -151,7 +199,7 @@ hr {
   .btn:link:hover,
   .wp-block-button__link:hover,
   .wp-block-button .wp-block-button__link:link:hover {
-    background-color: #4c4c4c;
+    background-color: #ff34c2;
     color: #fff; }
   .btn[disabled="disabled"], .btn[disabled],
   .btn:link[disabled="disabled"],
@@ -172,7 +220,7 @@ hr {
     .wp-block-button__link[disabled]:hover,
     .wp-block-button .wp-block-button__link:link[disabled="disabled"]:hover,
     .wp-block-button .wp-block-button__link:link[disabled]:hover {
-      background-color: #323232; }
+      background-color: #FF01B3; }
   .btn.round,
   .btn:link.round,
   .wp-block-button__link.round,
@@ -183,6 +231,44 @@ hr {
   .wp-block-button__link.wide,
   .wp-block-button .wp-block-button__link:link.wide {
     width: 100%; }
+  .btn.hover,
+  .btn:link.hover,
+  .wp-block-button__link.hover,
+  .wp-block-button .wp-block-button__link:link.hover {
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out; }
+    .btn.hover::before,
+    .btn:link.hover::before,
+    .wp-block-button__link.hover::before,
+    .wp-block-button .wp-block-button__link:link.hover::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 100%;
+      right: 100%;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background-color: #0090FF;
+      -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+      transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+      -webkit-transition: -webkit-transform 0.45s ease-in-out;
+      transition: -webkit-transform 0.45s ease-in-out;
+      -o-transition: transform 0.45s ease-in-out;
+      transition: transform 0.45s ease-in-out;
+      transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out; }
+    .btn.hover:hover::before,
+    .btn:link.hover:hover::before,
+    .wp-block-button__link.hover:hover::before,
+    .wp-block-button .wp-block-button__link:link.hover:hover::before {
+      -webkit-transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15);
+      transform: translate3d(50%, -50%, 0) scale3d(20, 15, 15); }
 
 /* Main column width */
 .wp-block {

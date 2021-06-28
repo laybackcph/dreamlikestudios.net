@@ -33,5 +33,9 @@ jQuery(document).ready(function ($){
 	// jQuery('.block-hero .slick-prev').html('<i class="far fa-arrow-left"></i>');
 	// jQuery('.block-hero .slick-next').html('<i class="far fa-arrow-right"></i>');
 
-	particlesJS.load('particles-js', 'wp-content/themes/layback-child/partials/blocks/hero/particles.json');
+	if(jQuery('#particles-js').length)
+	{
+		console.dir('this');
+		particlesJS.load('particles-js', 'wp-content/themes/layback-child/partials/blocks/hero/particles.json');
+	}
 });

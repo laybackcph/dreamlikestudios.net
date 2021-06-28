@@ -49,10 +49,14 @@
 			$block_align 	= $block['align'];
 		}
 
+		$particals = get_field('particals')
+
 	  ?>
 	
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
-			<div id="particles-js"></div>
+	    	<?php if($particals) : ?>
+				<div id="particles-js"></div>
+			<?php endif; ?>
 			<div class="stripes">				
 				<div class="stripe one"></div>
 				<div class="stripe two"></div>

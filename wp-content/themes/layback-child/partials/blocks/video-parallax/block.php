@@ -50,13 +50,17 @@
 		}
 
 		$video 				= get_field('video');
+		$yt_vid				= get_field('yt_vid');
 		$parallax_img		= get_field('parallax_img');
 
 	  ?>
 	    <div id="<?php echo $block_id; ?>" class="lb-block <?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">	
 	    	<?php if($video) : ?>
 				<video src="<?php echo $video['url']; ?>" muted></video>
+			<?php elseif ($yt_vid) : ?>
+	    	<div id="player"></div>
 	    	<?php endif; ?>
+
 			<?php if($parallax_img) : ?>
 				<img src="<?php echo $parallax_img['url']; ?>" alt="parallax">
 			<?php endif; ?>

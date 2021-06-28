@@ -23,8 +23,10 @@
     background-image: -webkit-linear-gradient(bottom, #0D0E22, transparent);
     background-image: -o-linear-gradient(bottom, #0D0E22, transparent);
     background-image: linear-gradient(to top, #0D0E22, transparent); }
-  .block-video-parallax video {
+  .block-video-parallax video,
+  .block-video-parallax iframe {
     width: 100%;
+    height: 100vh;
     vertical-align: middle; }
   .block-video-parallax img {
     position: absolute;

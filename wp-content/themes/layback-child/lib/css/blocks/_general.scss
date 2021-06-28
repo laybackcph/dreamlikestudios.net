@@ -8,15 +8,9 @@
 	max-width: $fullsize;
 
 	&.alignfull{
-		max-width: 100%;
-
 		.wp-block-group__inner-container{
 			max-width: $fullsize;
 		}
-	}
-
-	&.alignwide{
-		max-width: $xl;
 	}
 
 	.wp-block-group__inner-container{
@@ -25,11 +19,18 @@
 	}
 }
 
-.wp-block-cover{
+div {
+	&.alignfull{
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	&.alignwide{
-		max-width: 1140px;
-		margin: auto;
-	}	
+		max-width: $xl;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .lb-block {
