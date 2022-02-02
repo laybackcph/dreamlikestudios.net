@@ -1019,9 +1019,10 @@ ol li {
   color: #5159ab;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  color: white;
 }
 .site-header .site-navigation ul li a:hover {
-  color: #fff;
+  color: #FF01B3;
 }
 .site-header .site-navigation ul li:hover .sub-menu {
   pointer-events: all;

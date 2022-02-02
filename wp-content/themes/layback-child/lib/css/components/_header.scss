@@ -97,9 +97,10 @@
 					padding: 0 15px;
 					color: lighten($blue, 10%);
 					transition: .3s ease;
+					color: white;
 
 					&:hover {
-						color: #fff;
+						color: $secondary;
 					}
 				}
 
